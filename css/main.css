@@ -101,7 +101,6 @@ h2 {
 
 .container {
 	width: 100%;
-	margin: 20px;
 }
 
 img {
@@ -146,7 +145,7 @@ a {
 	text-decoration: none;
 }
 
-li:hover {
+header li:hover {
 	color: #890053;
 }
 
@@ -276,7 +275,65 @@ input:hover {
   flex-flow: row wrap;
 }
 
+/* Lesson Types - Mobile */
 
+#lessons {
+  background-color: lightgray;
+}
+
+#lessons .content-wrapper {
+  align-items: flex-start; 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 20px;
+  padding: 0 0 40px 0;
+}
+
+.piano,
+.voice,
+.acting {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  text-align: center;
+}
+
+#lessons .decor-line {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.decor-line figure {
+  border: solid #C2803D 5px;
+  color: #C2803D;
+  height: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.piano h2,
+.voice h2,
+.acting h2 {
+  width: 100%;
+  color: #890053;
+  font-size: 3em;
+  margin-bottom: 5px;
+}
+
+.piano h3,
+.voice h3,
+.acting h3 {
+  width: 100%;
+}
+
+#lessons ul {
+  text-align: left;
+  line-height: 2em;
+
+}
 
 /* ==========================================================================
    Helper classes
@@ -366,6 +423,8 @@ input:hover {
    Modify as content requires.
    ========================================================================== */
 
+/****** TABLET STYLES ******/
+
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
 
@@ -428,6 +487,42 @@ input:hover {
   .bio {
     max-width: 55%;
   }
+
+  /* Lesson Types - Tablet */
+
+  .piano,
+  .voice,
+  .acting {
+    width: 45%;
+    padding: 20px;
+  }
+
+}
+
+
+
+
+
+
+/****** DESKTOP STYLES *******/
+
+@media only screen and (min-width: 1200px) {
+
+  /* Lessons - Desktop */
+
+  .piano,
+  .voice,
+  .acting {
+    width: 28%;
+    padding: 30px;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  #lessons .decor-line {
+  justify-content: center;
+  width: 100%;
+
 }
 
 @media print,
