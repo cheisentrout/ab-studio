@@ -347,7 +347,7 @@ input:hover {
 
 #testimonials .content-wrapper {
   display: flex;
-  height: 400px;
+  height: 530px;
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
@@ -358,7 +358,7 @@ input:hover {
 
 .color-box {
   width: 70%;
-  height: 380px;
+  height: 500px;
   background-color: #890053;
   max-width: 500px;
   position: absolute;
@@ -387,6 +387,53 @@ input:hover {
   letter-spacing: .6em;
   padding-bottom: 10px;
   border-bottom: 1px solid white;
+}
+
+/* CONTACT - Mobile Styles */
+
+#contact {
+  background-color: #890053;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: #222;
+  background-color: lightgray;
+  padding: 25px;
+  text-align: center;
+  max-width: 1000px;
+}
+
+#contact h3 {
+  font-size: 1.5em;
+}
+
+#contact p,
+#contact address {
+  font-size: 1.1em;
+}
+
+#contact address {
+  font-style: normal;
+}
+
+#contact i {
+  font-size: 2em;
+  color: #890053;
+  width: 200px;
+  text-align: center;
+}
+
+/* COPYRIGHT */
+
+.copyright {
+  text-align: center;
+  font-size: .8em;
 }
 
 /* ==========================================================================
@@ -551,11 +598,13 @@ input:hover {
     padding: 20px;
   }
 
+/* TESTIMONIALS - Tablet Styles */
+
+  .testimonials-text {
+    margin-top: 70px;
+  }
 
 }
-
-
-
 
 
 
