@@ -95,8 +95,9 @@ body {
 
 h1,
 h2 {
-	font-family: "EB garamond";
+	font-family: "crimson text";
 	letter-spacing: .05em;
+  font-weight: lighter;
 }
 
 .container {
@@ -137,7 +138,7 @@ header ul {
 }
 
 li {
-	padding-right: 15px;
+	padding: 15px 15px 0 0;
 	color: black;
 }
 
@@ -147,6 +148,7 @@ a {
 
 header li:hover {
 	color: #890053;
+  border-top: 2px solid black;
 }
 
 /* Hero Area - Mobile */
@@ -178,6 +180,7 @@ header li:hover {
   text-transform: uppercase;
   letter-spacing: .2em;
   color:#E3A12B;
+  font-size: 2.5em;
 }
 
 .title-text h1 span {
@@ -333,6 +336,57 @@ input:hover {
   text-align: left;
   line-height: 2em;
 
+}
+
+/* TESTIMONIALS - Mobile Styles */
+
+#testimonials {
+  background-color: #C2803D;
+  z-index: -1;
+}
+
+#testimonials .content-wrapper {
+  display: flex;
+  height: 400px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 20px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.color-box {
+  width: 70%;
+  height: 380px;
+  background-color: #890053;
+  max-width: 500px;
+  position: absolute;
+  top: 0
+  left: 0;
+  z-index: 1;
+}
+
+.testimonials-text {
+  color: white;
+  line-height: 1.7em;
+  width: 110%;
+  height: auto;
+  max-width: 650px;
+  top: 200px;
+  z-index: 2
+}
+
+.testimonials-text p {
+  font-size: 1.1em;
+  padding-top: 5px;
+}
+
+#testimonials h3 {
+  text-transform: uppercase;
+  letter-spacing: .6em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
 }
 
 /* ==========================================================================
@@ -497,6 +551,7 @@ input:hover {
     padding: 20px;
   }
 
+
 }
 
 
@@ -514,9 +569,19 @@ input:hover {
   .voice,
   .acting {
     width: 28%;
+    height: 800px;
     padding: 30px;
     justify-content: flex-start;
+    margin-top: 30px;
     text-align: center;
+  }
+
+  .piano {
+    border-right: 2px solid #890053;
+  }
+
+  .voice {
+    border-right: 2px solid #890053;
   }
 
   #lessons .decor-line {
